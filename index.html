@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="ecommerce.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo_container">
+      <img class="hamburgerIcon" src="./images/icon-menu.svg" alt="">
+      <img class="logo" src="./images/logo.svg" alt="">
+    </div>
+
+    <nav>
+
+      <img class="closeIcon" src="./images/icon-close.svg" alt="" width="30px">
+
+      <ul>
+        <li class="nav_links"><a href="">Collections</a></li>
+        <li class="nav_links"><a href="">Men</a></li>
+        <li class="nav_links"><a href="">Women</a></li>
+        <li class="nav_links"><a href="">About</a></li>
+        <li class="nav_links"><a href="">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="profile_container">
+      <div class="profile_cart_logo_container">
+        <img class="profile_cart_logo" src="./images/icon-cart.svg" alt="">
+        <div class="profile_cart_logo_counter"></div>
+        <div class="cart_modal">
+         <p>Cart</p>
+         <hr>
+         <div class="cart_container">
+            <p class="cart_empty">Your Cart is empty</p>
+            <div class="cart_item">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="" width="50px">
+              <div class="cart_description_container">
+              <p>Fall Limited Edition Sneakers</p>
+              <p>$125.00 × <span class="cart_quantity"></span> <span class="cart_total"></span></p>
+              </div>
+              <img class="delete_icon" src="./images/icon-delete.svg" alt="">
+            </div>
+            <button class="checkout_btn">Checkout</button>
+         </div>
+        </div>
+      </div>
+      
+      <img class="profile_image" src="./images/image-avatar.png" alt="">
+    </div>
+  </header>
+
+  <main>
+
+    <div class="main_product_container">
+
+      <!-- MOBILE IMAGE SLIDER -->
+      <div class="mobile_product_slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="./images/image-product-1.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="./images/image-product-2.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="./images/image-product-3.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="./images/image-product-4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"><img class="next_btn" src="./images/icon-previous.svg" alt=""></div>
+          <div class="swiper-button-next"><img class="prev_btn" src="./images/icon-next.svg" alt=""></div>
+
+
+        </div>
+      </div>
+
+      <!-- DESKTOP IMAGE SLIDER -->
+
+      <div class="desktop_product_slider">
+        <div class="preview_image_container">
+          <img class="preview_image" src="./images/image-product-1.jpg" alt="">
+        </div>
+        <div class="thumbnail_container">
+          <img class="thumbnails" src="./images/image-product-1-thumbnail.jpg" alt="">
+          <img class="thumbnails" src="./images/image-product-2-thumbnail.jpg" alt="">
+          <img class="thumbnails" src="./images/image-product-3-thumbnail.jpg" alt="">
+          <img class="thumbnails" src="./images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+
+
+      <div class="product_container">
+        <p>SNEAKER COMPANY</p>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer</p>
+        <div class="main_price_container">
+          <div class="price_container">
+            <p>$125.00</p>
+            <p>50%</p>
+          </div>
+          <p>$250.00</p>
+        </div>
+        <div class="button_container">
+          <div class="quantity_container">
+            <img class="minus_icon" src="./images/icon-minus.svg" alt="">
+            <p class="quantity_level">0</p>
+            <img class="plus_icon" src="./images/icon-plus.svg" alt="">
+          </div>
+          <div class="addToCart_btn">
+            <img class="cart_logo" src="./images/icon-cart.svg" alt="" width="5%">
+            <p>Add to Card</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="ecommerce.js"></script>
+</body>
+</html>
